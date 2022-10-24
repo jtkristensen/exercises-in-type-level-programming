@@ -4,7 +4,7 @@ module PropositionalLogic where
 
 -- Essential.
 data Bottom                 -- A type with no constructors.
-type Top = ()               -- The unit type.
+type Top      = ()          -- The unit type.
 type a :/\: b = (a, b)      -- Conjunction is a pair.
 type a :\/: b = Either a b  -- Disjunction is a sum.
 type a :=>: b = a -> b      -- Implication is a function.
@@ -13,6 +13,7 @@ type a :=>: b = a -> b      -- Implication is a function.
 type Not a      = a :=>: Bottom                -- Negation.
 type a :<=>: b  = ((a :=>: b) :/\: (b :=>: a)) -- Biimplication.
 
+-- Propositions as types. Proofs as programs.
 data Proposition program = Proof program
 type Premise    = Proposition
 type Conclusion = Proposition

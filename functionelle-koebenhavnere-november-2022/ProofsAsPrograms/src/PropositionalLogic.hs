@@ -36,7 +36,6 @@ example2 (Proof (f, a)) = Proof (f a)
 
 -- Exercises
 
-
 exercise1
   :: Premise        ((a :=>: b) :/\: (b :=>: c))
                   ---------------------------------

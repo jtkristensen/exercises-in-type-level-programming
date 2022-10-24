@@ -38,23 +38,25 @@ example2 (Proof f) (Proof a) = Proof (f a)
 
 
 exercise1
-  :: Premise ((a :=>: b) :/\: (b :=>: c))
-  -------------------------------------------
-  -> Conclusion  (a :=>: c)
-exercise1 (Proof (f, g)) = Proof (g . f)
+  ::   Premise ((a :=>: b) :/\: (b :=>: c))
+     -------------------------------------------
+  ->      Conclusion  (a :=>: c)
+
+exercise1 = undefined
 
 exercise2
-  :: Premise    (a :\/: b)
-  -> Premise    (a :=>: c)
-  -> Premise    (b :=>: c)
-  -> Conclusion c
-exercise2 (Proof (Left  a)) (Proof f) _ = Proof $ f a
-exercise2 (Proof (Right b)) _ (Proof g) = Proof $ g b
+  :: Premise (a :\/: b) -> Premise (a :=>: c) -> Premise (b :=>: c)
+     --------------------------------------------------------------
+  ->                      Conclusion c
+
+exercise2 = undefined
 
 exercise3
-  :: Premise    ((a :/\: b) :\/: c)
-  -> Conclusion ((a :\/: c) :/\: (b :\/: c))
-exercise3 (Proof (Left (a, b))) = Proof (Left a, Left b)
-exercise3 (Proof (Right c    )) = Proof (Right c, Right c)
+  ::            Premise ((a :/\: b) :\/: c)
+     -------------------------------------------------
+  ->      Conclusion ((a :\/: c) :/\: (b :\/: c))
+
+exercise3 = undefined
+
 
 

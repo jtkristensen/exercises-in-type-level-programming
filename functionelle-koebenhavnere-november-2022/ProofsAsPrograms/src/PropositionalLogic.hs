@@ -28,33 +28,43 @@ example1 (Proof a) (Proof b) = Proof (a, b)
 
 
 example2
-  ::   Premise (a :=>: b) -> Premise a
-       ---------------------------------------
-  ->            Conclusion  b
+  :: Premise         ((a :=>: b) :/\: a)
+                  -----------------------
+  -> Conclusion             b
 
-example2 (Proof f) (Proof a) = Proof (f a)
+example2 (Proof (f, a)) = Proof (f a)
 
 -- Exercises
 
 
 exercise1
-  ::   Premise ((a :=>: b) :/\: (b :=>: c))
-     -------------------------------------------
-  ->      Conclusion  (a :=>: c)
+  :: Premise        ((a :=>: b) :/\: (b :=>: c))
+                  ---------------------------------
+  -> Conclusion              (a :=>: c)
 
 exercise1 = undefined
 
 exercise2
-  :: Premise ((a :\/: b) :/\: (a :=>: c) :/\: (b :=>: c))
-     --------------------------------------------------------------
-  ->                      Conclusion c
+  :: Premise       ((a :\/: b) :/\: (a :=>: c) :/\: (b :=>: c))
+                 ------------------------------------------------
+  -> Conclusion                         c
 
 exercise2 = undefined
 
 exercise3
-  ::            Premise ((a :/\: b) :\/: c)
-     -------------------------------------------------
-  ->      Conclusion ((a :\/: c) :/\: (b :\/: c))
+  :: Premise          ((a :/\: b) :\/: c)
+                  ------------------------------
+  -> Conclusion    ((a :\/: c) :/\: (b :\/: c))
 
 exercise3 = undefined
 
+exercise4
+  :: Premise          ((a :\/: b) :/\: c)
+                  ------------------------------
+  -> Conclusion    ((a :/\: c) :\/: (b :/\: c))
+
+exercise4 (Proof (aorb, c)) =
+  Proof $
+    case aorb of
+      Left  a -> Left  (a, c)
+      Right b -> Right (b, c)

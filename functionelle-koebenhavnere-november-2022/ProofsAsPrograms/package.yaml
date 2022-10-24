@@ -2,22 +2,13 @@ name:                ProofsAsPrograms
 version:             0.1.0.0
 github:              "githubuser/ProofsAsPrograms"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2022 Author name here"
+author:              "Joachim Tilsted Kristensen"
+maintainer:          "joachkr@ifi.uio.no"
+copyright:           "2022 Joachim Tilsted Kristensen"
 
 extra-source-files:
 - README.md
 - CHANGELOG.md
-
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/ProofsAsPrograms#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -35,25 +26,3 @@ ghc-options:
 
 library:
   source-dirs: src
-
-executables:
-  ProofsAsPrograms-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - ProofsAsPrograms
-
-tests:
-  ProofsAsPrograms-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - ProofsAsPrograms

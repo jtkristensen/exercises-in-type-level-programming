@@ -63,8 +63,4 @@ exercise4
                   ------------------------------
   -> Conclusion    ((a :/\: c) :\/: (b :/\: c))
 
-exercise4 (Proof (aorb, c)) =
-  Proof $
-    case aorb of
-      Left  a -> Left  (a, c)
-      Right b -> Right (b, c)
+exercise4 = undefined

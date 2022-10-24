@@ -26,11 +26,9 @@ intro (Program (Right c    )) = Program (Right c, Right c)
 exercise1 :: Proof ((a :=>: b) :/\: (b :=>: c)) -> Proof (a :=>: c)
 exercise1 (Program (f, g)) = Program (g . f)
 
-exercise2 :: Proof (a :\/: b) -> Proof (a :=>: c) -> Proof (b :=>: c)  -> Proof c
+exercise2 :: Proof (a :\/: b) -> Proof (a :=>: c) -> Proof (b :=>: c) -> Proof c
 exercise2 (Program (Left  a)) (Program f) _ = Program $ f a
 exercise2 (Program (Right b)) _ (Program g) = Program $ g b
 
-
-
--- lem :: a :\/: (Not a)
--- lem = Right undefined
+exercise3 :: Proof (a :=>: b) -> Proof a -> Proof b
+exercise3 (Program f) (Program a) = Program (f a)

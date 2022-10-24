@@ -6,12 +6,11 @@ cabal-version: 1.12
 
 name:           NatProperties
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/NatProperties#readme>
 homepage:       https://github.com/githubuser/NatProperties#readme
 bug-reports:    https://github.com/githubuser/NatProperties/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2022 Author name here
+author:         Joachim Tilsted Kristensen
+maintainer:     joachkr@ifi.uio.no
+copyright:      2022 Joachim Tilsted Kristensen
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -25,7 +24,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Reasoning
   other-modules:
       Paths_NatProperties
   hs-source-dirs:
@@ -33,29 +32,4 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
-  default-language: Haskell2010
-
-executable NatProperties-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_NatProperties
-  hs-source-dirs:
-      app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      NatProperties
-    , base >=4.7 && <5
-  default-language: Haskell2010
-
-test-suite NatProperties-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_NatProperties
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      NatProperties
-    , base >=4.7 && <5
   default-language: Haskell2010

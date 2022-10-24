@@ -45,7 +45,7 @@ exercise1
 exercise1 = undefined
 
 exercise2
-  :: Premise (a :\/: b) -> Premise (a :=>: c) -> Premise (b :=>: c)
+  :: Premise ((a :\/: b) :/\: (a :=>: c) :/\: (b :=>: c))
      --------------------------------------------------------------
   ->                      Conclusion c
 
@@ -57,6 +57,4 @@ exercise3
   ->      Conclusion ((a :\/: c) :/\: (b :\/: c))
 
 exercise3 = undefined
-
-
 

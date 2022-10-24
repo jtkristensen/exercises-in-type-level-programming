@@ -13,22 +13,48 @@ type a :=>: b = a -> b      -- Implication is a function.
 type Not a      = a :=>: Bottom                -- Negation.
 type a :<=>: b  = ((a :=>: b) :/\: (b :=>: a)) -- Biimplication.
 
-data Proof proposition = Program proposition
+data Proposition program = Proof program
+type Premise    = Proposition
+type Conclusion = Proposition
 
 -- Examples
 
-intro :: Proof ((a :/\: b) :\/: c) -> Proof ((a :\/: c) :/\: (b :\/: c))
-intro (Program (Left (a, b))) = Program (Left a, Left b)
-intro (Program (Right c    )) = Program (Right c, Right c)
+example1
+  ::      Premise a    ->    Premise b
+       ----------------------------------
+  ->      Conclusion (a :/\: b)
+
+example1 (Proof a) (Proof b) = Proof (a, b)
+
+
+example2
+  ::   Premise (a :=>: b) -> Premise a
+       ---------------------------------------
+  ->            Conclusion  b
+
+example2 (Proof f) (Proof a) = Proof (f a)
 
 -- Exercises
 
-exercise1 :: Proof ((a :=>: b) :/\: (b :=>: c)) -> Proof (a :=>: c)
-exercise1 (Program (f, g)) = Program (g . f)
 
-exercise2 :: Proof (a :\/: b) -> Proof (a :=>: c) -> Proof (b :=>: c) -> Proof c
-exercise2 (Program (Left  a)) (Program f) _ = Program $ f a
-exercise2 (Program (Right b)) _ (Program g) = Program $ g b
+exercise1
+  :: Premise ((a :=>: b) :/\: (b :=>: c))
+  -------------------------------------------
+  -> Conclusion  (a :=>: c)
+exercise1 (Proof (f, g)) = Proof (g . f)
 
-exercise3 :: Proof (a :=>: b) -> Proof a -> Proof b
-exercise3 (Program f) (Program a) = Program (f a)
+exercise2
+  :: Premise    (a :\/: b)
+  -> Premise    (a :=>: c)
+  -> Premise    (b :=>: c)
+  -> Conclusion c
+exercise2 (Proof (Left  a)) (Proof f) _ = Proof $ f a
+exercise2 (Proof (Right b)) _ (Proof g) = Proof $ g b
+
+exercise3
+  :: Premise    ((a :/\: b) :\/: c)
+  -> Conclusion ((a :\/: c) :/\: (b :\/: c))
+exercise3 (Proof (Left (a, b))) = Proof (Left a, Left b)
+exercise3 (Proof (Right c    )) = Proof (Right c, Right c)
+
+

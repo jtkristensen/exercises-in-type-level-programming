@@ -6,18 +6,14 @@ cabal-version: 1.12
 
 name:           ProofsAsPrograms
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/ProofsAsPrograms#readme>
 homepage:       https://github.com/githubuser/ProofsAsPrograms#readme
 bug-reports:    https://github.com/githubuser/ProofsAsPrograms/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2022 Author name here
+author:         Joachim Tilsted Kristensen
+maintainer:     joachkr@ifi.uio.no
+copyright:      2022 Joachim Tilsted Kristensen
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-extra-source-files:
-    README.md
-    CHANGELOG.md
 
 source-repository head
   type: git
@@ -25,37 +21,11 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      PropositionalLogic
   other-modules:
       Paths_ProofsAsPrograms
   hs-source-dirs:
       src
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
-  default-language: Haskell2010
-
-executable ProofsAsPrograms-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_ProofsAsPrograms
-  hs-source-dirs:
-      app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      ProofsAsPrograms
-    , base >=4.7 && <5
-  default-language: Haskell2010
-
-test-suite ProofsAsPrograms-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_ProofsAsPrograms
-  hs-source-dirs:
-      test
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      ProofsAsPrograms
-    , base >=4.7 && <5
   default-language: Haskell2010

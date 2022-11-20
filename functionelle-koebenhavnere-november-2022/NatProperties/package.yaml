@@ -6,10 +6,6 @@ author:              "Joachim Tilsted Kristensen"
 maintainer:          "joachkr@ifi.uio.no"
 copyright:           "2022 Joachim Tilsted Kristensen"
 
-extra-source-files:
-- README.md
-- CHANGELOG.md
-
 dependencies:
 - base >= 4.7 && < 5
 
@@ -19,7 +15,6 @@ ghc-options:
 - -Widentities
 - -Wincomplete-record-updates
 - -Wincomplete-uni-patterns
-- -Wmissing-export-lists
 - -Wmissing-home-modules
 - -Wpartial-fields
 - -Wredundant-constraints

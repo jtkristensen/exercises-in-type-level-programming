@@ -27,7 +27,6 @@ example1
 
 example1 (Proof a) (Proof b) = Proof (a, b)
 
-
 example2
   :: Premise         ((a :=>: b), a)
                   -----------------------
@@ -41,7 +40,6 @@ example3
   -> Conclusion      anything
 
 example3 (Proof bottom) = case bottom of {}
-
 
 -- Exercises
 
@@ -84,7 +82,31 @@ exercise5 = undefined
 exercise6
   :: Premise       ( p :\/: (Not p) , p :=>: q, Not p :=>: q)
                  ---------------------------------------------
-  -> Conclusion                  q
+  -> Conclusion                        q
 
 exercise6 = undefined
 
+
+class Decidable p where
+  lem :: () -> p :\/: (Not p)
+
+derive :: Proposition p -> p
+derive (Proof p) = p
+
+exercise7
+  :: Decidable p
+  => Conclusion  (( p :=>: q ) :<=>: ((Not p) :\/: q))
+
+exercise7 =
+    case lem() of
+      Left p ->
+        Proof ( \f -> Right $ f p
+              , \np_q ->
+                   case np_q of
+                     Left np -> derive $ example3 $ exercise5 $ Proof (p, np)
+                     Right q -> const q
+              )
+      Right np ->
+        Proof (\_ -> Left np
+              ,\_ -> \p -> derive $ example3 $ exercise5 $ Proof (p, np)
+              )

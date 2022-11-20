@@ -21,6 +21,11 @@ infixr 1 %|
 (%|) :: (a :==: b) -> ((a ~ b) => r) -> r
 (%|) Reflexive x = x
 
+qed :: a :==: a
+qed = Reflexive
+
+-- Useful lemmas:
+
 eqSymmetric :: a :==: b -> b :==: a
 eqSymmetric Reflexive = Reflexive
 
@@ -29,6 +34,3 @@ eqCongruent _ Reflexive = Reflexive
 
 eqTransitive :: (a :==: b) -> (b :==: c) -> (a :==: c)
 eqTransitive Reflexive Reflexive = Reflexive
-
-qed :: a :==: a
-qed = Reflexive

@@ -89,7 +89,7 @@ exercise6 = undefined
 -- Harder exercise
 
 class Decidable p where
-  lem :: () -> p :\/: (Not p)
+  lem :: p :\/: (Not p)
 
 exercise7
   :: Decidable p

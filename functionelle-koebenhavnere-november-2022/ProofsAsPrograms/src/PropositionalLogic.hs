@@ -86,27 +86,13 @@ exercise6
 
 exercise6 = undefined
 
+-- Harder exercise.
 
 class Decidable p where
   lem :: () -> p :\/: (Not p)
-
-derive :: Proposition p -> p
-derive (Proof p) = p
 
 exercise7
   :: Decidable p
   => Conclusion  (( p :=>: q ) :<=>: ((Not p) :\/: q))
 
-exercise7 =
-    case lem() of
-      Left p ->
-        Proof ( \f -> Right $ f p
-              , \np_q ->
-                   case np_q of
-                     Left np -> derive $ example3 $ exercise5 $ Proof (p, np)
-                     Right q -> const q
-              )
-      Right np ->
-        Proof (\_ -> Left np
-              ,\_ -> \p -> derive $ example3 $ exercise5 $ Proof (p, np)
-              )
+exercise7 = undefined

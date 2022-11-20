@@ -1,4 +1,4 @@
-{-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE TypeOperators, EmptyCase #-}
 
 module PropositionalLogic where
 
@@ -33,7 +33,15 @@ example2
                   -----------------------
   -> Conclusion             b
 
-example2 (Proof (f, a)) = Proof (f a)
+example2 (Proof (f, a)) = Proof $ f a
+
+example3
+  :: Premise          Bottom
+                ---------------------
+  -> Conclusion      anything
+
+example3 (Proof bottom) = case bottom of {}
+
 
 -- Exercises
 
@@ -64,3 +72,19 @@ exercise4
   -> Conclusion    ((a :/\: c) :\/: (b :/\: c))
 
 exercise4 = undefined
+
+
+exercise5
+  :: Premise        (p , Not p)
+                 --------------------
+  -> Conclusion       Bottom
+
+exercise5 = undefined
+
+exercise6
+  :: Premise       ( p :\/: (Not p) , p :=>: q, Not p :=>: q)
+                 ---------------------------------------------
+  -> Conclusion                  q
+
+exercise6 = undefined
+

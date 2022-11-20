@@ -1,5 +1,4 @@
-{-# LANGUAGE PolyKinds
-           , TypeFamilies
+{-# LANGUAGE KindSignatures
            , TypeOperators
            , GADTs
            , RankNTypes
@@ -7,9 +6,8 @@
 
 module Reasoning where
 
+import Singleton
 import Data.Kind (Type)
-
-data family Singleton ( t :: k )
 
 infix 3 :==:
 

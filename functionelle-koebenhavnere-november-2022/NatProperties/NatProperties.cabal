@@ -21,7 +21,10 @@ source-repository head
 
 library
   exposed-modules:
-      Reasoning
+      Equality
+      Nat
+      Properties
+      Singleton
   other-modules:
       Paths_NatProperties
   hs-source-dirs:

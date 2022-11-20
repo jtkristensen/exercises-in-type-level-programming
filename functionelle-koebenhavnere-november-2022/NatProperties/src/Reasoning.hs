@@ -1,4 +1,4 @@
-{-# LANGUAGE KindSignatures
+{-# LANGUAGE PolyKinds
            , TypeOperators
            , GADTs
            , RankNTypes
@@ -27,8 +27,8 @@ qed = Reflexive
 eqSymmetric :: a :==: b -> b :==: a
 eqSymmetric Reflexive = Reflexive
 
-eqCongruent :: (Singleton a -> Singleton b) -> (a :==: b) -> (f a :==: f b)
-eqCongruent _ Reflexive = Reflexive
+eqCongruent :: (a :==: b) -> (f a :==: f b)
+eqCongruent Reflexive = Reflexive
 
 eqTransitive :: (a :==: b) -> (b :==: c) -> (a :==: c)
 eqTransitive Reflexive Reflexive = Reflexive

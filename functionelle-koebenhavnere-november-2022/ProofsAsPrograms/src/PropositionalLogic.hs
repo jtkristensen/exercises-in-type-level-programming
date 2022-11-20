@@ -29,7 +29,7 @@ example1 (Proof a) (Proof b) = Proof (a, b)
 
 
 example2
-  :: Premise         ((a :=>: b) :/\: a)
+  :: Premise         ((a :=>: b), a)
                   -----------------------
   -> Conclusion             b
 
@@ -38,14 +38,14 @@ example2 (Proof (f, a)) = Proof (f a)
 -- Exercises
 
 exercise1
-  :: Premise        ((a :=>: b) :/\: (b :=>: c))
+  :: Premise        ((a :=>: b) , (b :=>: c))
                   ---------------------------------
   -> Conclusion              (a :=>: c)
 
 exercise1 = undefined
 
 exercise2
-  :: Premise       ((a :\/: b) :/\: (a :=>: c) :/\: (b :=>: c))
+  :: Premise       ((a :\/: b) , (a :=>: c) , (b :=>: c))
                  ------------------------------------------------
   -> Conclusion                         c
 

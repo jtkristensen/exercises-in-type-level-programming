@@ -86,7 +86,7 @@ exercise6
 
 exercise6 = undefined
 
--- Harder exercise.
+-- Harder exercise
 
 class Decidable p where
   lem :: () -> p :\/: (Not p)

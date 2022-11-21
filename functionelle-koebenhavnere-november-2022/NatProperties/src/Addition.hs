@@ -3,38 +3,38 @@
            , GADTs
   #-}
 
-module Properties where
+module Addition where
 
 import Nat
 import Equality
 
-
-plus0
+zero
   :: SNat n
   -> n :+ 'Zero :==: n
 
-plus0 = undefined
+zero = undefined
 
-plusS
+suc
   :: SNat m -> SNat n
   -> m :+ 'Suc n :==: 'Suc m :+ n
 
-plusS = undefined
+suc = undefined
 
-plusCommutative
+commutative
   :: SNat m -> SNat n
   -> m :+ n :==: n :+ m
 
-plusCommutative = undefined
+commutative = undefined
 
-plusInjective
+injective
   :: SNat m -> SNat n -> SNat k
   -> m :==: n -> m :+ k :==: n :+ k
 
-plusInjective = undefined
+injective = undefined
 
-plusAssociative
+associative
   :: SNat m -> SNat n -> SNat k
   -> m :+ (n :+ k) :==: (m :+ n) :+ k
 
-plusAssociative  = undefined
+associative = undefined
+

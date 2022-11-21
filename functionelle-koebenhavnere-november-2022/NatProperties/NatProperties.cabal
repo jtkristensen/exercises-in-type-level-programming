@@ -21,9 +21,9 @@ source-repository head
 
 library
   exposed-modules:
+      Addition
       Equality
       Nat
-      Properties
       Singleton
   other-modules:
       Paths_NatProperties

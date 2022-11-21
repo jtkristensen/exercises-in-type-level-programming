@@ -37,4 +37,3 @@ associative
   -> m :+ (n :+ k) :==: (m :+ n) :+ k
 
 associative = undefined
-

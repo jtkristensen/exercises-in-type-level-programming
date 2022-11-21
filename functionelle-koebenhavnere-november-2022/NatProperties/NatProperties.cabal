@@ -23,6 +23,7 @@ library
   exposed-modules:
       Addition
       Equality
+      Multiplication
       Nat
       Singleton
   other-modules:

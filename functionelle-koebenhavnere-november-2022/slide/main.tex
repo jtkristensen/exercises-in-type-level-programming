@@ -29,17 +29,35 @@
 \begin{document}
 \frame{\titlepage \vspace{-0.5cm}}
 
-\begin{frame}{Propositions as types}
+\begin{frame}{Plan}
+  \begin{block}{Topics of today}
+    \begin{itemize}
+    \item Propositions as types, proofs as programs.
+    \item Exercises.
+    \item What are dependent types.
+    \item How can we simulate dependent types in Haskell.
+    \item Exercises.
+    \item Discussion.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
-\begin{frame}{Proofs as programs}
+\begin{frame}{The Curry-Howard-Lambek Correspondence}
+  \begin{block}{From Wikipedia}
+    \begin{itemize}
+    \item Curry 1934 : Types look like axiom schemes for intuitionistic logic.
+    \item Curry 1958 : Hilbert style deduction systems coincide with the typed fragment of combinatory logic.
+    \item Howard 1969 : Natural deduction can be directly interpreted in a typed lambda calculus.
+    \item Lambek 2005 : Lambda calculi are structurally equivalent to Cartesian closed categories.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
-\frame{
+\begin{frame}{Propositions as types, Proofs as Programs (Exercises)}
   \begin{center}
-    Exercises
+    \url{https://github.com/jtkristensen/exercises-in-type-level-programming/tree/main/functionelle-koebenhavnere-november-2022/ProofsAsPrograms}
   \end{center}
-}
+\end{frame}
 
 \frame{
   \frametitle{Lambda Cube ($\lambda_\rightarrow$)}
@@ -70,11 +88,11 @@
   \includegraphics[width=0.9\textwidth]{./illustrations/lambda_calculus/dependent_typing}
 }
 
-\frame{
+\begin{frame}{Simulating Dependent types in Haskell (Exercises)}
   \begin{center}
-    Exercises
+\url{https://github.com/jtkristensen/exercises-in-type-level-programming/tree/main/functionelle-koebenhavnere-november-2022/NatProperties}
   \end{center}
-}
+\end{frame}
 
 \frame{
   \begin{center}

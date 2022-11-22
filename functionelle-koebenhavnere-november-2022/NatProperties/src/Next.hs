@@ -5,4 +5,3 @@
 
 module Next where
 
--- Examples go here

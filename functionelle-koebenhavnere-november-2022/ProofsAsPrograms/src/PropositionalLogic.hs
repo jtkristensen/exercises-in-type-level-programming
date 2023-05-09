@@ -48,28 +48,40 @@ exercise1
                   ---------------------------------
   -> Conclusion              (a :=>: c)
 
-exercise1 = undefined
+exercise1 (Proof (f, g)) = Proof $ g . f
 
 exercise2
   :: Premise       ((a :\/: b) , (a :=>: c) , (b :=>: c))
                  ------------------------------------------------
   -> Conclusion                         c
 
-exercise2 = undefined
+exercise2 (Proof (aOrB, f, g)) =
+  Proof $
+  case aOrB of
+    Left a  -> f a
+    Right b -> g b
 
 exercise3
   :: Premise          ((a :/\: b) :\/: c)
                   ------------------------------
   -> Conclusion    ((a :\/: c) :/\: (b :\/: c))
 
-exercise3 = undefined
+exercise3 (Proof outer) =
+  Proof $
+  case outer of
+    Left (a, b) -> (Left a, Left b)
+    Right c     -> (Right c, Right c)
 
 exercise4
   :: Premise          ((a :\/: b) :/\: c)
                   ------------------------------
   -> Conclusion    ((a :/\: c) :\/: (b :/\: c))
 
-exercise4 = undefined
+exercise4 (Proof (aOrB, c)) =
+  Proof $
+  case aOrB of
+    Left a -> Left (a, c)
+    Right b -> Right (b, c)
 
 
 exercise5
@@ -77,22 +89,44 @@ exercise5
                  --------------------
   -> Conclusion       Bottom
 
-exercise5 = undefined
+exercise5 (Proof (p, np)) =
+  Proof $ np p
 
 exercise6
   :: Premise       ( p :\/: (Not p) , p :=>: q, Not p :=>: q)
                  ---------------------------------------------
   -> Conclusion                        q
 
-exercise6 = undefined
+exercise6 (Proof (pOrNP, f, g)) =
+  Proof $
+  case pOrNP of
+    Left p -> f p
+    Right np -> g np
 
 -- Harder exercise
 
 class Decidable p where
   lem :: p :\/: (Not p)
 
+derive :: Proposition something -> something
+derive (Proof thing) = thing
+
 exercise7
   :: Decidable p
   => Conclusion  (( p :=>: q ) :<=>: ((Not p) :\/: q))
 
-exercise7 = undefined
+exercise7 =
+  Proof $
+  case lem of
+    Left p ->
+      ( \f -> Right $ f p
+      , \npOrQ ->
+          case npOrQ of
+            Left np -> derive $ example3 (Proof $ np p)
+            Right q -> const q
+      )
+    Right np ->
+      ( \_ -> Left np
+      , \_ -> (\p -> derive $ example3 (Proof $ np p))
+      )
+

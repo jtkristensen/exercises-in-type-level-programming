@@ -47,12 +47,11 @@ distributive O _ _ = qed
 distributive (S m) n k =
      distributive m n k
   %| Addition.associative k (m %* k) (n %* k)
+  %| qed
 
 associative
   :: SNat m -> SNat n -> SNat k
   -> m :* (n :* k) :==: (m :* n) :* k
 
-associative  O    _ _ = qed
-associative (S m) n k =
-  associative  m n k
+associative = undefined
 

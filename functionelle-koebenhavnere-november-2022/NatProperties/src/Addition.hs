@@ -33,15 +33,14 @@ associative
   :: SNat m -> SNat n -> SNat k
   -> m :+ (n :+ k) :==: (m :+ n) :+ k
 
-associative  O    n k = qed
-associative (S m) n k = congruent (associative m n k)
+associative  O    _ _ = qed
+associative (S m) n k =
+    congruent (associative m n k)
 
 commutative
   :: SNat m -> SNat n
   -> m :+ n :==: n :+ m
 
 commutative O     n = symmetric (zero n)
-commutative (S m) n =
-     commutative n m
-  %| symmetric (suc n m)
-  %| qed
+commutative (S m) n = commutative n m %| symmetric (suc n m)
+

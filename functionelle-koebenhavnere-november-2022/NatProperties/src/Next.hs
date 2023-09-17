@@ -7,23 +7,25 @@
 
 module Next where
 
-import Nat
+import Nat hiding ((+))
 import Data.Kind (Type)
 import Comparison
 
--- data Expr a where
---   Const :: b -> Expr b
---   Less  :: Ord c => Expr c -> Expr c -> Expr Bool
---   Add   :: Num n => Expr n -> Expr n -> Expr n
---   If    :: Expr Bool -> Expr a -> Expr a -> Expr a
+-- Intrinsic typing.
+data Expr a where
+  Const :: b -> Expr b
+  Less  :: Ord c => Expr c -> Expr c -> Expr Bool
+  Add   :: Num n => Expr n -> Expr n -> Expr n
+  If    :: Expr Bool -> Expr a -> Expr a -> Expr a
 
--- eval :: Expr a -> a
--- eval (Const b) = b
--- eval (Less e1 e2) = eval e1 < eval e2
--- eval (Add e1 e2) = eval e1 + eval e2
--- eval (If e1 e2 e3) =
---   eval (if eval e1 then e2 else e3)
+eval :: Expr a -> a
+eval (Const b) = b
+eval (Less e1 e2) = eval e1 < eval e2
+eval (Add e1 e2) = eval e1 + eval e2
+eval (If e1 e2 e3) =
+  eval (if eval e1 then e2 else e3)
 
+-- Size types.
 data Vector :: Nat -> (Type -> Type) where
   Empty :: Vector 'Zero a
   Cons  :: a -> Vector n a -> Vector ('Suc n) a

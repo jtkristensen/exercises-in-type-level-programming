@@ -40,13 +40,19 @@ injective
 injective _ _ _ Reflexive = qed
 
 distributive
-  :: SNat k -> SNat m -> SNat n
-  -> k :* (m :+ n) :==: (k :* n) :+ (k :* m)
+  :: SNat m -> SNat n -> SNat k
+  -> (m :+ n) :* k :==: (m :* k) :+ (n :* k)
 
-distributive = undefined
+distributive O _ _ = qed
+distributive (S m) n k =
+     distributive m n k
+  %| Addition.associative k (m %* k) (n %* k)
 
 associative
   :: SNat m -> SNat n -> SNat k
   -> m :* (n :* k) :==: (m :* n) :* k
 
-associative  = undefined
+associative  O    _ _ = qed
+associative (S m) n k =
+  associative  m n k
+

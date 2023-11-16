@@ -29,21 +29,21 @@ example1
        ----------------------------------
   ->      Conclusion (a :/\: b)
 
-example1 (Proof a) (Proof b) = undefined
+example1 (Proof a) (Proof b) = Proof (a, b)
 
 example2
   :: Premise         ((a :=>: b), a)
                   -----------------------
   -> Conclusion             b
 
-example2 (Proof (f, a)) = undefined
+example2 (Proof (f, a)) = Proof (f a)
 
 example3
   :: Premise          Bottom
                 ---------------------
   -> Conclusion      anything
 
-example3 (Proof bottom) = undefined
+example3 (Proof bottom) = case bottom of {}
 
 -- Exercises
 
@@ -52,42 +52,58 @@ exercise1
                   ---------------------------------
   -> Conclusion              (a :=>: c)
 
-exercise1 (Proof (f, g)) = undefined
+exercise1 (Proof (f, g)) = Proof (g . f)
 
 exercise2
   :: Premise       ((a :\/: b) , (a :=>: c) , (b :=>: c))
                  ------------------------------------------------
   -> Conclusion                         c
 
-exercise2 (Proof (aOrB, f, g)) = undefined
+exercise2 (Proof (aOrB, f, g)) =
+  Proof $
+  case aOrB of
+    Left  a -> (f a)
+    Right b -> (g b)
 
 exercise3
   :: Premise          ((a :/\: b) :\/: c)
                   ------------------------------
   -> Conclusion    ((a :\/: c) :/\: (b :\/: c))
 
-exercise3 (Proof outer) = undefined
+exercise3 (Proof outer) =
+  Proof $
+  case outer of
+    Left  (a, b) -> (Left a , Left b)
+    Right c      -> (Right c , Right c)
 
 exercise4
   :: Premise          ((a :\/: b) :/\: c)
                   ------------------------------
   -> Conclusion    ((a :/\: c) :\/: (b :/\: c))
 
-exercise4 (Proof (aOrB, c)) = undefined
+exercise4 (Proof (aOrB, c)) =
+  Proof $
+  case aOrB of
+    Left  a -> Left  (a, c)
+    Right b -> Right (b, c)
 
 exercise5
   :: Premise        (p , Not p)
                  --------------------
   -> Conclusion       Bottom
 
-exercise5 (Proof (p, np)) = undefined
+exercise5 (Proof (p, np)) = Proof (np p)
 
 exercise6
   :: Premise       ( p :\/: (Not p) , p :=>: q, Not p :=>: q)
                  ---------------------------------------------
   -> Conclusion                        q
 
-exercise6 (Proof (pOrNP, f, g)) = undefined
+exercise6 (Proof (pOrNP, f, g)) =
+  Proof $
+  case pOrNP of
+    Left   p -> f p
+    Right np -> g np
 
 -- Harder exercise
 

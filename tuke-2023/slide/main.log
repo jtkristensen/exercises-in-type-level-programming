@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.11.4)  22 NOV 2022 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2023.6.3)  16 NOV 2023 11:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1028,28 +1028,28 @@ runsystem(rm main.aex)...executed.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
  (/home/joachim/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Try loading font information for T1+PTSans-TLF on input lin
-e 29.
+e 30.
 
 (/home/joachim/texmf/tex/latex/paratype/T1PTSans-TLF.fd
 File: T1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for T1/
@@ -1121,7 +1121,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (/home/joachim/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1131,63 +1131,63 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (./main.out)
 (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/PTSerif-TLF/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/PTSerif-TLF/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/bx/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/bx/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/bx/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/PTSans-TLF/m/n on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/PTSans-TLF/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/PTSans-TLF/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
+(Font)                  OT1/cmss/bx/n --> T1/PTSans-TLF/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/PTSans-TLF/m/it on input line 29.
+(Font)                  OT1/cmr/m/it --> T1/PTSans-TLF/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/PTSans-TLF/m/it on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
+(Font)                  OT1/cmr/bx/it --> T1/PTSans-TLF/m/it on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  T1/PTSans-TLF/m/n --> T1/PTSans-TLF/bx/n on input line 
-29.
+30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/PTSans-TLF/m/it --> T1/PTSans-TLF/bx/it on input lin
-e 29.
+e 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/PTSerif-TLF/bx/n on input line 29.
+(Font)                  OT1/cmss/bx/n --> T1/PTSerif-TLF/bx/n on input line 30.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  T1/PTSans-TLF/bx/n --> T1/PTSans-TLF/bx/n on input line
- 29.
+ 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  T1/PTSans-TLF/m/n --> T1/PTSans-TLF/bx/n on input line 
-29.
+30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/PTSans-TLF/m/it --> T1/PTSans-TLF/bx/it on input lin
-e 29.
+e 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/PTMono-TLF/m/n --> T1/PTMono-TLF/bx/n on input line 
-29.
+30.
 
 (/home/joachim/texmf/tex/latex/translator/translator-basic-dictionary-English.d
 ict
@@ -1212,122 +1212,138 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/home/joachim/texmf/tex/latex/translator/translator-theorem-dictionary-English
 .dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./main.nav)
-LaTeX Font Info:    Try loading font information for T1+PTMono-TLF on input lin
-e 30.
- (/home/joachim/texmf/tex/latex/paratype/T1PTMono-TLF.fd
-File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
-)
-[1
+) (./main.nav) [1
 
 {/home/joachim/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+<logo.png, id=20, 678.535pt x 605.26125pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 37.
+(pdftex.def)             Requested size: 273.9493pt x 244.3629pt.
+[2
+
+ <./logo.png>]
+<michael2.png, id=28, 145.5036pt x 97.3236pt>
+File: michael2.png Graphic file (type png)
+<use michael2.png>
+Package pdftex.def Info: michael2.png  used on input line 41.
+(pdftex.def)             Requested size: 342.43532pt x 229.05049pt.
+ [3
+
+ <./michael2.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
 (/home/joachim/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 (/home/joachim/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [4
+
+]
 LaTeX Font Info:    Font shape `T1/PTSans-TLF/bx/n' in size <14.4> not availabl
 e
 (Font)              Font shape `T1/PTSans-TLF/b/n' tried instead on input line 
-43.
- [2
-
-] [3
-
-] [4
+67.
+ [5
 
 ]
-<./illustrations/lambda_calculus/basic_syntax.png, id=42, 1027.84pt x 258.9675p
+LaTeX Font Info:    Try loading font information for T1+PTMono-TLF on input lin
+e 73.
+
+(/home/joachim/texmf/tex/latex/paratype/T1PTMono-TLF.fd
+File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
+) [6
+
+]
+<./illustrations/lambda_calculus/basic_syntax.png, id=55, 1027.84pt x 258.9675p
 t>
 File: ./illustrations/lambda_calculus/basic_syntax.png Graphic file (type png)
 <use ./illustrations/lambda_calculus/basic_syntax.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/basic_syntax.png  used
- on input line 67.
+ on input line 80.
 (pdftex.def)             Requested size: 171.21765pt x 43.13875pt.
-<./illustrations/lambda_calculus/basic_typing.png, id=44, 1504.62125pt x 386.44
+<./illustrations/lambda_calculus/basic_typing.png, id=56, 1504.62125pt x 386.44
 376pt>
 File: ./illustrations/lambda_calculus/basic_typing.png Graphic file (type png)
 <use ./illustrations/lambda_calculus/basic_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/basic_typing.png  used
- on input line 67.
+ on input line 80.
 (pdftex.def)             Requested size: 342.43532pt x 87.94852pt.
- [5
+ [7
 
  <./illustrations/lambda_calculus/basic_syntax.png> <./illustrations/lambda_cal
 culus/basic_typing.png>]
-<./illustrations/lambda_calculus/polymorphic_syntax.png, id=54, 874.26625pt x 1
+<./illustrations/lambda_calculus/polymorphic_syntax.png, id=67, 874.26625pt x 1
 65.61874pt>
 File: ./illustrations/lambda_calculus/polymorphic_syntax.png Graphic file (type
  png)
 <use ./illustrations/lambda_calculus/polymorphic_syntax.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/polymorphic_syntax.png
-  used on input line 74.
+  used on input line 87.
 (pdftex.def)             Requested size: 171.21765pt x 32.43324pt.
 File: ./illustrations/lambda_calculus/basic_typing.png Graphic file (type png)
 <use ./illustrations/lambda_calculus/basic_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/basic_typing.png  used
- on input line 74.
+ on input line 87.
 (pdftex.def)             Requested size: 342.43532pt x 87.94852pt.
-<./illustrations/lambda_calculus/polymorphic_typing.png, id=55, 1557.82pt x 264
+<./illustrations/lambda_calculus/polymorphic_typing.png, id=68, 1557.82pt x 264
 .99pt>
 File: ./illustrations/lambda_calculus/polymorphic_typing.png Graphic file (type
  png)
 <use ./illustrations/lambda_calculus/polymorphic_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/polymorphic_typing.png
-  used on input line 74.
+  used on input line 87.
 (pdftex.def)             Requested size: 342.43532pt x 58.2454pt.
- [6
+ [8
 
  <./illustrations/lambda_calculus/polymorphic_syntax.png> <./illustrations/lamb
 da_calculus/polymorphic_typing.png>]
-<./illustrations/lambda_calculus/type_level_syntax.png, id=63, 818.05624pt x 21
+<./illustrations/lambda_calculus/type_level_syntax.png, id=76, 818.05624pt x 21
 9.82124pt>
 File: ./illustrations/lambda_calculus/type_level_syntax.png Graphic file (type 
 png)
 <use ./illustrations/lambda_calculus/type_level_syntax.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/type_level_syntax.png 
- used on input line 82.
+ used on input line 95.
 (pdftex.def)             Requested size: 171.21765pt x 46.00616pt.
 File: ./illustrations/lambda_calculus/basic_typing.png Graphic file (type png)
 <use ./illustrations/lambda_calculus/basic_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/basic_typing.png  used
- on input line 82.
+ on input line 95.
 (pdftex.def)             Requested size: 342.43532pt x 87.94852pt.
- [7
+ [9
 
  <./illustrations/lambda_calculus/type_level_syntax.png>]
-<./illustrations/lambda_calculus/dependent_syntax.png, id=75, 602.25pt x 225.84
+<./illustrations/lambda_calculus/dependent_syntax.png, id=87, 602.25pt x 225.84
 375pt>
 File: ./illustrations/lambda_calculus/dependent_syntax.png Graphic file (type p
 ng)
 <use ./illustrations/lambda_calculus/dependent_syntax.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/dependent_syntax.png  
-used on input line 89.
+used on input line 102.
 (pdftex.def)             Requested size: 171.21765pt x 64.20761pt.
 File: ./illustrations/lambda_calculus/basic_typing.png Graphic file (type png)
 <use ./illustrations/lambda_calculus/basic_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/basic_typing.png  used
- on input line 89.
+ on input line 102.
 (pdftex.def)             Requested size: 308.18968pt x 79.15071pt.
-<./illustrations/lambda_calculus/dependent_typing.png, id=76, 1530.71875pt x 37
+<./illustrations/lambda_calculus/dependent_typing.png, id=88, 1530.71875pt x 37
 9.4175pt>
 File: ./illustrations/lambda_calculus/dependent_typing.png Graphic file (type p
 ng)
 <use ./illustrations/lambda_calculus/dependent_typing.png>
 Package pdftex.def Info: ./illustrations/lambda_calculus/dependent_typing.png  
-used on input line 89.
+used on input line 102.
 (pdftex.def)             Requested size: 308.18968pt x 76.39162pt.
- [8
+ [10
 
  <./illustrations/lambda_calculus/dependent_syntax.png> <./illustrations/lambda
-_calculus/dependent_typing.png>] [9
+_calculus/dependent_typing.png>] [11
 
-] [10
+] [12
 
 ]
 \tf@nav=\write8
@@ -1339,23 +1355,23 @@ _calculus/dependent_typing.png>] [9
 \tf@snm=\write10
 \openout10 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21971 strings out of 492615
- 414498 string characters out of 6131390
- 552115 words of memory out of 5000000
- 25308 multiletter control sequences out of 15000+600000
- 124466 words of font info for 74 fonts, out of 8000000 for 9000
+ 21995 strings out of 492615
+ 414847 string characters out of 6131391
+ 552162 words of memory out of 5000000
+ 25328 multiletter control sequences out of 15000+600000
+ 123852 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,795b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,55p,795b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/joachim/texmf/fonts/enc/dvips/paratype/ptsans_t1.enc}{/home/joachim/te
 xmf/fonts/enc/dvips/paratype/ptmono_t1.enc}</home/joachim/texmf/fonts/type1/par
 atype/ptmono/PTM55F.pfb></home/joachim/texmf/fonts/type1/paratype/ptsans/PTS55F
@@ -1367,10 +1383,10 @@ ome/joachim/texmf/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/joachim/texm
 f/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/joachim/texmf/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></home/joachim/texmf/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb>
-Output written on main.pdf (10 pages, 217371 bytes).
+Output written on main.pdf (12 pages, 470778 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

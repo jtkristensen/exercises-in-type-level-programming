@@ -36,7 +36,7 @@ example2
                   -----------------------
   -> Conclusion             b
 
-example2 (Proof (f, a)) = Proof $ f a
+example2 (Proof (f, a)) = undefined
 
 example3
   :: Premise          Bottom

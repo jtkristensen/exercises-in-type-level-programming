@@ -1,0 +1,23 @@
+name:                NatProperties
+version:             0.1.0.0
+github:              "githubuser/NatProperties"
+license:             BSD3
+author:              "Joachim Tilsted Kristensen"
+maintainer:          "joachkr@ifi.uio.no"
+copyright:           "2022 Joachim Tilsted Kristensen"
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
